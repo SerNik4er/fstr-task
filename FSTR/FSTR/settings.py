@@ -84,7 +84,8 @@ WSGI_APPLICATION = 'FSTR.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'LOGIN': os.getenv('FSTR_DB_LOGIN'),
+        'NAME': os.getenv('FSTR_DB_NAME'),
+        'USER': os.getenv('FSTR_DB_USER'),
         'PASSWORD' :os.getenv('FSTR_DB_PASSWORD'),
     }
 }
