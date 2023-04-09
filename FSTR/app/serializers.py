@@ -12,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
 class CoordsSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Coordinates
+        model = Coords
         fields = ['latitude', 'longitude', 'height']
 
 

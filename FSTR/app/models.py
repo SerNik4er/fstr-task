@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.contrib.auth.models import User
+from django.contrib.auth.models import User
 
 
 
@@ -59,7 +59,7 @@ class PerevalImages(models.Model):
         return f'id: {self.pk}, title: {self.title}'
 
     class Meta:
-        verbonse_name_plural = 'Фотографии'
+        verbose_name_plural = 'Фотографии'
 
 
 class PerevalAreas(models.Model):
